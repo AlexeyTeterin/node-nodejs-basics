@@ -57,6 +57,7 @@
     "fs:list": "cd src/fs && node list.js",
     "fs:read": "cd src/fs && node read.js",
     "fs:rename": "cd src/fs && node rename.js",
-    "modules:cjsToEsm": "cd src/modules && node cjsToEsm.mjs"
+    "modules:cjsToEsm": "cd src/modules && node cjsToEsm.mjs",
+    "hash:calcHash": "cd src/hash && node calcHash.js"
   }
 }
