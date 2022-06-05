@@ -51,11 +51,12 @@
     "@types/node": "^17.0.36"
   },
   "scripts": {
-    "fs:copy": "node src/fs/copy.js",
-    "fs:create": "node src/fs/create.js",
-    "fs:delete": "node src/fs/delete.js",
-    "fs:list": "node src/fs/list.js",
-    "fs:read": "node src/fs/read.js",
-    "fs:rename": "node src/fs/rename.js"
+    "fs:copy": "cd src/fs && node copy.js",
+    "fs:create": "cd src/fs && node create.js",
+    "fs:delete": "cd src/fs && node delete.js",
+    "fs:list": "cd src/fs && node list.js",
+    "fs:read": "cd src/fs && node read.js",
+    "fs:rename": "cd src/fs && node rename.js",
+    "modules:cjsToEsm": "cd src/modules && node cjsToEsm.mjs"
   }
 }
