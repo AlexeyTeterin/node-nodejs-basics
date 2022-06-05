@@ -61,6 +61,8 @@
     "hash:calcHash": "cd src/hash && node calcHash.js",
     "streams:read": "cd src/streams && node read.js",
     "streams:write": "cd src/streams && node write.js",
-    "streams:transform": "cd src/streams && node transform.js"
+    "streams:transform": "cd src/streams && node transform.js",
+    "zip:compress": "cd src/zip && node compress.js",
+    "zip:decompress": "cd src/zip && node decompress.js"
   }
 }
