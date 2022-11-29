@@ -4,7 +4,7 @@
   "description": "This repository is the part of nodejs-assignments https://github.com/AlreadyBored/nodejs-assignments",
   "engines" : {
     "npm" : ">=7.0.0",
-    "node" : ">=16.0.0"
+    "node" : "=18.12.1"
   },
   "type": "module",
   "scripts": {
