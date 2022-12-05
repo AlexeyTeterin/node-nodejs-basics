@@ -2,6 +2,10 @@
   "name": "node-nodejs-basics",
   "version": "1.0.0",
   "description": "This repository is the part of nodejs-assignments https://github.com/AlreadyBored/nodejs-assignments",
+  "engines" : {
+    "npm" : ">=7.0.0",
+    "node" : "=18.12.1"
+  },
   "type": "module",
   "scripts": {
     "cli:args": "node src/cli/args.js --some-arg value1 --other 1337 --arg2 42",
@@ -36,5 +40,31 @@
   "bugs": {
     "url": "https://github.com/AlreadyBored/node-nodejs-basics/issues"
   },
-  "homepage": "https://github.com/AlreadyBored/node-nodejs-basics#readme"
+  "homepage": "https://github.com/AlreadyBored/node-nodejs-basics#readme",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.36"
+  },
+  "scripts": {
+    "fs:copy": "cd src/fs && node copy.js",
+    "fs:create": "cd src/fs && node create.js",
+    "fs:delete": "cd src/fs && node delete.js",
+    "fs:list": "cd src/fs && node list.js",
+    "fs:read": "cd src/fs && node read.js",
+    "fs:rename": "cd src/fs && node rename.js",
+    "modules:cjsToEsm": "cd src/modules && node cjsToEsm.mjs",
+    "hash:calcHash": "cd src/hash && node calcHash.js",
+    "streams:read": "cd src/streams && node read.js",
+    "streams:write": "cd src/streams && node write.js",
+    "streams:transform": "cd src/streams && node transform.js",
+    "zip:compress": "cd src/zip && node compress.js",
+    "zip:decompress": "cd src/zip && node decompress.js",
+    "cli:env": "cd src/cli && node env.js",
+    "cli:args": "cd src/cli && node args.js --testKey testValue"
+  }
 }
